@@ -207,3 +207,21 @@ Bg3.addEventListener('click', () => {
     Bg2.classList.remove('active');
     changeBG();
 });
+
+const exploreLink = document.getElementById('home-link');
+
+    function updateExploreLink() {
+        // Check if the screen width is below a certain threshold (e.g., 600px)
+        const isMobile = window.innerWidth < 600;
+
+        // Set the href attribute based on the screen width
+        exploreLink.href = isMobile
+            ? 'https://priyanshuthapliyal2005.github.io/social-media-website-main/main/main.html'
+            : '#'; // Set to '#' or 'javascript:void(0)' if you want to disable the link on larger screens
+    }
+
+    // Initial update when the page loads
+    updateExploreLink();
+
+    // Update the link whenever the window is resized
+    window.addEventListener('resize', updateExploreLink);

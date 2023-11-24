@@ -1,50 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>SignIn&SignUp</title>
-    <link rel="stylesheet" type="text/css" href="style.css" />
-    <script
-      src="https://kit.fontawesome.com/64d58efce2.js"
-      crossorigin="anonymous"
-    ></script>
-  
-  </head>
-  <body>
-    <div class="container">
-      <div class="forms-container">
-        <div class="signin-signup">
-          
-          <form action="" class="sign-in-form">
-            <h2 class="title">Sign In</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SPARKBOOK - Responsive Social Media Website Using HTML, CSS, & JavaScript</title>
+    <!-- IconScout CDN -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v2.1.6/css/unicons.css">
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h2 class="logo">
+                SPARKBOOK
+            </h2>
+            <div class="search-bar">
+                <i class="uil uil-search"></i>
+                <input type="search" placeholder="Search for creators, inspirations, and projects">
             </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
+            <div class="create">
+                <label class="btn btn-primary" for="create-post">Create</label>
+                <div class="profile-photo">
+                    <img src="./images/profile-1.jpg" alt="">
+                </div>
             </div>
-            
-            <input type="button" value="Login" class="btn solid" onclick="redirectToMainPage()" />
-
-           <p class="social-text">Or Sign in with social platforms</p>
-          <div class="social-media">
-           <a href="#" class="social-icon" id="facebook-icon">
-            <i class="fab fa-facebook-f"></i>
-          </a>
-          <a href="#" class="social-icon" id="twitter-icon">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="#" class="social-icon" id="google-icon">
-        <i class="fab fa-google"></i>
-        </a>
-        <a href="#" class="social-icon" id="linkedin-icon">
-        <i class="fab fa-linkedin-in"></i>
-        </a>
         </div>
-          </form>
+    </nav>
+    
 
-<<<<<<< HEAD
     <!-------------------------------- MAIN ----------------------------------->
     <main>
         <div class="container">
@@ -55,22 +40,18 @@
                         <img src="./images/profile-1.jpg">
                     </div>
                     <div class="handle">
-                        <h4>Yash Kansal</h4>
+                        <h4>Nia Ridania</h4>
                         <p class="text-muted">
-                            @Kansal
+                            @niaridania
                         </p>
                     </div>
                 </a>
 
                 <!----------------- SIDEBAR -------------------->
                 <div class="sidebar">
-                    <a class="menu-item active">
+                    <a class="menu-item active" id="home-link">
                         <span><i class="uil uil-home"></i></span>
                         <h3>Home</h3>   
-                    </a>
-                    <a class="menu-item">
-                        <span><i class="uil uil-compass"></i></span>
-                        <h3>Explore</h3>
                     </a>
                     <a class="menu-item"  id="notifications">
                         <span><i class="uil uil-bell"><small class="notification-count">9+</small></i></span>
@@ -127,7 +108,7 @@
                                     <img src="./images/profile-7.jpg">
                                 </div>
                                 <div class="notification-body">
-                                    <b>Sunil chetri</b> commented on your post
+                                    <b>Jane Doe</b> commented on your post
                                     <small class="text-muted">1 Hour Ago</small>
                                 </div>
                             </div>
@@ -179,7 +160,7 @@
                         <div class="profile-photo">
                             <img src="./images/profile-10.jpg">
                         </div>
-                        <p class="name">Allu Arjun</p>
+                        <p class="name">Winnie Haley</p>
                     </div>
                     <div class="story">
                         <div class="profile-photo">
@@ -191,7 +172,7 @@
                         <div class="profile-photo">
                             <img src="./images/profile-12.jpg">
                         </div>
-                        <p class="name">Sunil chetri</p>
+                        <p class="name">Jane Doe</p>
                     </div>
                     <div class="story">
                         <div class="profile-photo">
@@ -418,7 +399,7 @@
                                     <img src="./images/profile-7.jpg">
                                 </div>
                                 <div class="info">
-                                    <h3>Anamika chopra</h3>
+                                    <h3>Keylie Hadid</h3>
                                     <small>Dubai, 3 Hours Ago</small>
                                 </div>
                             </div>
@@ -450,7 +431,7 @@
                         </div>
 
                         <div class="caption">
-                            <p><b>Anamika chopra</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem obcaecati nisi veritatis quisquam eius accusantium rem quo repellat facilis neque.
+                            <p><b>Keylie Hadid</b> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem obcaecati nisi veritatis quisquam eius accusantium rem quo repellat facilis neque.
                             <span class="harsh-tag">#lifestyle</span></p>
                         </div>
 
@@ -518,7 +499,7 @@
                                     <img src="./images/profile-3.jpg">
                                 </div>
                                 <div class="info">
-                                    <h3>Graphic Era</h3>
+                                    <h3>Indiana Ellison</h3>
                                     <small>Qatar, 8 Hours Ago</small>
                                 </div>
                             </div>
@@ -550,7 +531,7 @@
                         </div>
 
                         <div class="caption">
-                            <p><b>Graphic Era</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur itaque quasi autem pariatur ducimus eligendi, qui odio molestias at molestiae. 
+                            <p><b>Indiana Ellison</b> Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur itaque quasi autem pariatur ducimus eligendi, qui odio molestias at molestiae. 
                             <span class="harsh-tag">#lifestyle</span></p>
                         </div>
 
@@ -631,7 +612,7 @@
                             <div class="active"></div>
                         </div>
                         <div class="message-body">
-                            <h5>Anamika chopra</h5>
+                            <h5>Keylie Hadid</h5>
                             <p class="text-bold">5 new messages</p>
                         </div>
                     </div>
@@ -657,7 +638,7 @@
                                 <img src="./images/profile-20.jpg">
                             </div>
                             <div>
-                                <h5>Rohit Sharma</h5>
+                                <h5>Hajia Bintu</h5>
                                 <p class="text-muted">8 mutual friends</p>
                             </div>
                         </div>
@@ -709,68 +690,66 @@
                         </div>
                     </div>
                 </div>
-=======
-
-          <form action="" class="sign-up-form">
-            <h2 class="title">Sign Up</h2>
-            <div class="input-field">
-              <i class="fas fa-user"></i>
-              <input type="text" placeholder="Username" />
             </div>
-            <div class="input-field">
-              <i class="fas fa-envelope"></i>
-              <input type="email" placeholder="Email" />
-            </div>
-            <div class="input-field">
-              <i class="fas fa-lock"></i>
-              <input type="password" placeholder="Password" />
->>>>>>> 966aadf441bb5038fc132a228556abfdec8bd1b1
-            </div>
-            <input type="submit" value="Sign Up" class="btn solid" />
-
-            <p class="social-text">Or Sign up with social platforms</p>
-            <div class="social-media">
-              <a href="#" class="social-icon">
-                <i class="fab fa-facebook-f"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-twitter"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-google"></i>
-              </a>
-              <a href="#" class="social-icon">
-                <i class="fab fa-linkedin-in"></i>
-              </a>
-            </div>
-          </form>
+            <!----------------- END OF RIGHT -------------------->
         </div>
-      </div>
-      <div class="panels-container">
+    </main>
 
-        <div class="panel left-panel">
-            <div class="content">
-                <h3>New here?</h3>
-                <p><b>It’s Your World.</b>
-                  Connect with people and interests across Sparkbook technologies to help you make your world your own.</p>
-                <button class="btn transparent" id="sign-up-btn">Sign Up</button>
-            </div>
-            <img src="./img/log.svg" class="image" alt="">
-        </div>
+    <!----------------- THEME CUSTOMIZATION -------------------->
+    <div class="customize-theme">
+        <div class="card">
+            <h2>Customize your view</h2>
+            <p class="text-muted">Manage your font size, color, and background</p>
 
-        <div class="panel right-panel">
-            <div class="content">
-                <h3>One of us?</h3>
-                <p><b>It’s Your World.</b>
-                  Connect with people and interests across Sparkbook technologies to help you make your world your own.</p>
-                <button class="btn transparent" id="sign-in-btn">Sign In</button>
+            <!----------- FONT SIZE ----------->
+            <div class="font-size">
+                <h4>Font Size</h4>
+                <div>
+                    <h6>Aa</h6>
+                    <div class="choose-size">
+                        <span class="font-size-1"></span>
+                        <span class="font-size-2 active"></span>
+                        <span class="font-size-3"></span>
+                        <span class="font-size-4"></span>
+                        <span class="font-size-5"></span>
+                    </div>
+                    <h3>Aa</h3>
+                </div>
             </div>
-            <img src="./img/register.svg" class="image" alt="">
+
+            <!----------- PRIMARY COLORS ----------->
+            <div class="color">
+                <h4>Color</h4>
+                <div class="choose-color">
+                    <span class="color-1 active"></span>
+                    <span class="color-2"></span>
+                    <span class="color-3"></span>
+                    <span class="color-4"></span>
+                    <span class="color-5"></span>
+                </div>
+            </div>
+
+            <!----------- BACKGROUND COLORS ----------->
+            <div class="background">
+                <h4>Background</h4>
+                <div class="choose-bg">
+                    <div class="bg-1 active">
+                        <span></span>
+                        <h5 for="bg-1">Light</h5>
+                    </div>
+                    <div class="bg-2">
+                        <span></span>
+                        <h5 for="bg-2">Dim</h5>
+                    </div>
+                    <div class="bg-3">
+                        <span></span>
+                        <h5 for="bg-3">Dark</h5>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </div>
 
-    <script src="./app.js"></script>
-  </body>
+    <script src="./index.js"></script>
+</body>
 </html>
-
