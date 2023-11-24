@@ -12,5 +12,5 @@ sign_in_btn.addEventListener('click', () =>{
 
 function redirectToMainPage() {
     // Replace this path with the actual path to your index.html
-    window.location.replace("http://127.0.0.1:5500/main.html");
+    window.location.replace("http://127.0.0.1:5500/main/main.html");
 }
