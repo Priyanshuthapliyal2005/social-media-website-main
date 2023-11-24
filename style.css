@@ -289,7 +289,7 @@ main .container .left .profile {
 .middle .stories .story {
     padding: var(--card-padding);
     /* border-radius: var(--card-border-radius); */
-    border-radius: 33%;
+    border-radius: 47%;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
