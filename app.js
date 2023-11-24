@@ -14,3 +14,18 @@ function redirectToMainPage() {
     // Replace this path with the actual path to your index.html
     window.location.replace("https://priyanshuthapliyal2005.github.io/social-media-website-main/main/main.html");
 }
+document.getElementById('facebook-icon').addEventListener('click', function() {
+    window.location.href = 'https://priyanshuthapliyal2005.github.io/social-media-website-main/main/main.html';
+  });
+
+  document.getElementById('twitter-icon').addEventListener('click', function() {
+    window.location.href = 'https://priyanshuthapliyal2005.github.io/social-media-website-main/main/main.html';
+  });
+
+  document.getElementById('google-icon').addEventListener('click', function() {
+    window.location.href = 'https://priyanshuthapliyal2005.github.io/social-media-website-main/main/main.html';
+  });
+
+  document.getElementById('linkedin-icon').addEventListener('click', function() {
+    window.location.href = 'https://priyanshuthapliyal2005.github.io/social-media-website-main/main/main.html';
+  });
